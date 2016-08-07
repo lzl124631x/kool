@@ -1,0 +1,22 @@
+{
+  "name": "kool",
+  "version": "1.0.0",
+  "description": "My experimental SPA framework based on Knockout and Crossroads.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Richard LIU",
+  "license": "ISC",
+  "dependencies": {
+    "crossroads": "^0.12.2",
+    "hasher": "^1.2.0",
+    "jquery": "^3.1.0",
+    "knockout": "^3.4.0",
+    "text": "requirejs/text"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0"
+  }
+}
