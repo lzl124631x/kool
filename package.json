@@ -13,10 +13,14 @@
     "hasher": "^1.2.0",
     "jquery": "^3.1.0",
     "knockout": "^3.4.0",
+    "lodash": "^4.14.1",
     "text": "requirejs/text"
   },
   "devDependencies": {
+    "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
-    "gulp-compass": "^2.1.0"
+    "gulp-compass": "^2.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^2.3.2"
   }
 }

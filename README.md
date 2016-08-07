@@ -1,6 +1,6 @@
 # Kool
 
-Kool is my experimental SPA framework based on Knockout and Crossroads.
+Kool is my EXPERIMENTAL SPA framework based on Knockout and Crossroads.
 
 # License (MIT)
 

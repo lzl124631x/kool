@@ -1,0 +1,246 @@
+.vcenter, .navbar-mobile .navbar-mid-col {
+  position: relative;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* Removes scroll bars in transition. */
+}
+
+.page, .page-container {
+  height: 100%;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  /* Removes horizontal scroll bar */
+  -moz-animation-duration: 0.5s !important;
+  -webkit-animation-duration: 0.5s !important;
+  animation-duration: 0.5s !important;
+}
+
+.page.active {
+  /* Removes vertical scroll bar when it's needless, adds it back when the content is long. */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.page-container.active,
+.page-container.animated,
+.page.active,
+.page.animated {
+  display: block;
+}
+
+.page {
+  /* DO NOT make .page position: absolute, otherwise the page scrolling will feel bad in iOS. */
+}
+
+.page-container.animated, .page.animated {
+  position: absolute;
+  /* Makes the two page/page-container in transition both align to the top. */
+  top: 0;
+}
+
+.navbar-mobile {
+  height: 3.2em;
+  min-width: 300px;
+}
+.navbar-mobile.navbar-default {
+  background-color: rgba(248, 248, 248, 0.8);
+}
+.navbar-mobile .navbar-nav {
+  margin: 0 -15px;
+}
+.navbar-mobile .btn.navbar-btn {
+  padding: .5em 1em;
+  margin: 0;
+}
+.navbar-mobile .navbar-toggle {
+  margin: .3em 0;
+  padding: .7em;
+}
+.navbar-mobile .navbar-btn-left-col {
+  left: .2em;
+}
+.navbar-mobile .navbar-btn-right-col {
+  right: .2em;
+}
+.navbar-mobile .navbar-btn-right .glyphicon {
+  margin-left: .2em;
+}
+.navbar-mobile .navbar-btn-left-col,
+.navbar-mobile .navbar-btn-right-col {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.navbar-mobile .navbar-header {
+  height: 100%;
+  position: relative;
+}
+.navbar-mobile .navbar-title {
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  outline: 0 !important;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  color: #555;
+  margin: 0;
+  font-weight: 400;
+  position: relative;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.navbar-mobile .navbar-mid-col {
+  padding: 0 3em;
+}
+.navbar-mobile .navbar-mid-col.extend-right {
+  padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-mobile .navbar-header {
+    float: none;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navbar-mobile .navbar-right {
+    float: none !important;
+  }
+  .navbar-mobile .navbar-nav > li {
+    float: none;
+  }
+  .navbar-mobile .navbar-toggle {
+    display: block;
+  }
+  .navbar-mobile .nav {
+    float: none;
+    margin: 0;
+  }
+  .navbar-mobile .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-mobile .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+}
+.with-header {
+  padding-top: 3.5em;
+}
+
+@media only screen and (max-width: 320px) {
+  .with-header {
+    padding-top: 4em;
+  }
+}
+.btn,
+button {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  text-shadow: none;
+  padding: .5em 1em;
+  text-decoration: none;
+  text-align: center;
+  font-size: inherit;
+  color: inherit;
+  border: medium none;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.btn:active,
+button:active {
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+.btn.btn-primary,
+button.btn-primary {
+  color: #fff;
+  background-color: #1FA2EA;
+}
+.btn.btn-rounded, .btn.btn-primary,
+button.btn-rounded,
+button.btn.btn-primary,
+button.btn-primary {
+  -moz-border-radius: 2em;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+}
+.btn.btn-embossed, .btn.btn-primary,
+button.btn-embossed,
+button.btn.btn-primary,
+button.btn-primary {
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
+}
+.btn.btn-embossed.active, .btn.active.btn-primary, .btn.btn-embossed:active, .btn.btn-primary:active,
+button.btn-embossed.active,
+button.active.btn-primary,
+button.btn-embossed:active,
+button.btn-primary:active {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15) inset;
+}
+.btn.btn-block,
+button.btn-block {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif !important;
+  min-width: 300px;
+  text-shadow: none;
+}
+
+footer {
+  width: 100%;
+  padding: .5em 1em;
+}
+footer.footer-fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

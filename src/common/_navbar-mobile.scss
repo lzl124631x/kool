@@ -1,6 +1,4 @@
-﻿@import "compass";
-
-.navbar-mobile {
+﻿.navbar-mobile {
     height: 3.2em;
     @include min-width(300px);
 
@@ -44,6 +42,7 @@
 
     .navbar-header {
         height: 100%;
+        position: relative;
     }
 
     .navbar-title {
@@ -64,16 +63,8 @@
         pointer-events: none;
     }
 
-    .navbar-btn.btn-default,
-    .navbar-btn.btn-default:active {
-        border: 0;
-        background-color: transparent;
-        color: $default-text-gray;
-        @include box-shadow(none);
-    }
-
     .navbar-mid-col {
-        @extend .vertical-center;
+        @extend .vcenter;
         padding: 0 3em;
     }
 

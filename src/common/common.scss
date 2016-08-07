@@ -1,0 +1,29 @@
+$default-blue: #1FA2EA;
+
+@import "compass";
+@import "_utility.scss";
+@import "_page.scss";
+@import "_navbar-mobile.scss";
+@import "_button.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    @include box-sizing(border-box);
+}
+
+body {
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif !important;
+    @include min-width(300px);
+    @include text-shadow(none);
+}
+
+footer {
+  width: 100%;
+  padding: .5em 1em;
+  &.footer-fixed-bottom  {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}

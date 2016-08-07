@@ -18,7 +18,7 @@
 
         (function activateCrossroads() {
             function parseHash(newHash, oldHash) {
-                // app.changeHash(newHash);
+                app.onHashChange(newHash);
                 crossroads.parse(newHash);
             }
 

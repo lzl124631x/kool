@@ -1,7 +1,7 @@
 define([
  'jquery',
  'knockout',
- 'text!./home.html'
+ 'text!./first.html'
  ],
  function ($, ko, template) {
    return { viewModel: viewModel, template: template };

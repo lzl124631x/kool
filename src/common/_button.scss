@@ -1,0 +1,42 @@
+.btn,
+button {
+  @include inline-block;
+  @include text-shadow(none);
+  padding: .5em 1em;
+  text-decoration: none;
+  text-align: center;
+  font-size: inherit;
+  color: inherit;
+  border: medium none;
+  @include border-radius(.3em);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  @include transition(all .2s ease-in-out);
+
+  &:active, {
+    @include transform(scale(.95));
+  }
+
+  &.btn-primary {
+    color: #fff;
+    background-color: $default-blue;
+    @extend .btn-rounded;
+    @extend .btn-embossed;
+  }
+
+  &.btn-rounded {
+    @include border-radius(2em);
+  }
+
+  &.btn-embossed {
+    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
+    &.active,
+    &:active {
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15) inset;
+    }
+  }
+
+  &.btn-block {
+    display: block;
+  }
+}

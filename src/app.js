@@ -15,8 +15,5 @@ define([
     'src/components',
     'kool/router'],
   function() {
-    app.updateQuery = function() {
-
-    };
     // This is a entry point of web app.
 });
